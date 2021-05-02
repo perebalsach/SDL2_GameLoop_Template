@@ -3,11 +3,12 @@
 #include <iostream>
 
 #include "game.h"
+#include "Window.h"
 
 int main(int argc, char* argv[])
 {
 	Game* game = new Game();
-	
+
 	game->Init(800, 600);
 
 	while (game->IsRunning())

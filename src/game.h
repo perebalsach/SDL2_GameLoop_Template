@@ -2,7 +2,7 @@
 #define GAME_H
 
 #include "input.h"
-#include "renderer.h"
+#include "window.h"
 
 class Game
 {
@@ -14,12 +14,13 @@ public:
 	void HandleInput();
 	void Update();
 	void Render();
-	
+
 	bool IsRunning();
 	void Destroy();
+
 private:
 	bool m_running;
 	Input* m_input;
-	Renderer* renderer;
+	Window* window;
 };
 #endif // !GAME_H
